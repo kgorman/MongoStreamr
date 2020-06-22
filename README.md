@@ -24,5 +24,5 @@ echo "MONGOCOL=data" >>mongostreamr.env
 ### Populate Eventador Kafka topic with data
 ```
 docker build . -t streamr
-docker -it -d --env-file mongostreamr.env streamr
+docker run -it --env-file mongostreamr.env streamr
 ```
