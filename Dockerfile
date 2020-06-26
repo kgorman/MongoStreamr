@@ -1,4 +1,4 @@
-FROM python:3.8-slim-buster
+FROM python:3.8-buster
 ADD . /steamr
 WORKDIR /steamr
 RUN apt-get update --allow-releaseinfo-change && apt-get install -y \
